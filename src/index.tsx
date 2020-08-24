@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import { mergeStyles } from 'office-ui-fabric-react';
+import Introduction from './pages/Introduction';
+import { SpectrumPlot } from './components/SpectrumPlot';
+import { SpectraViewer } from './components/SpectraViewer';
 
 // Inject some global styles
 mergeStyles({
@@ -14,4 +17,4 @@ mergeStyles({
   }
 });
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<SpectraViewer/>, document.getElementById('app'));

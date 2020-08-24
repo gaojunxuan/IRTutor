@@ -1,0 +1,26 @@
+{
+  "general": [
+    {
+      "key": "test",
+      "leftBound": 2800,
+      "rightBound": 3010,
+      "isLeftInclusive": true,
+      "isRightInclusive": true
+    }
+  ],
+  "hexane": [
+
+  ],
+  "heptyne": [
+
+  ],
+  "hexanol": [
+    {
+      "key": "test2",
+      "leftBound": 3200,
+      "rightBound": 3550,
+      "isLeftInclusive": true,
+      "isRightInclusive": true
+    }
+  ]
+}

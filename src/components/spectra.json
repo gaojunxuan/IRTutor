@@ -1,0 +1,38 @@
+{
+  "spectra": [
+    { "key": "hexane", "text": "Hexane" },
+    { "key": "23dimethylbutane", "text": "2,3-Dimethylbutane" },
+    { "key": "hexene", "text": "Hexene" },
+    { "key": "heptyne", "text": "Heptyne" },
+    { "key": "heptylCyanide", "text": "Heptyl cyanide" },
+    { "key": "toluene", "text": "Toluene" },
+    { "key": "hexanol", "text": "Hexanol" },
+    { "key": "hexylAmine", "text": "Hexyl amine" },
+    { "key": "heptaldehyde", "text": "Heptaldehyde" },
+    { "key": "heptanone", "text": "Heptanone" },
+    { "key": "heptanoicAcid", "text": "Heptanoic acid" },
+    { "key": "ethylAcetate", "text": "Ethyl acetate" },
+    { "key": "butyricAnhydride", "text": "Butyric anhydride" }
+  ],
+  "overlay": {
+    "hexane": [
+      { "key": "23dimethylbutane", "text": "2,3-Dimethylbutane" },
+      { "key": "cyclohexane", "text": "Cyclohexane" },
+      { "key": "heptyne", "text": "Heptyne" },
+      { "key": "none", "text": "None" }
+    ],
+    "heptyne": [
+      { "key": "hexane", "text": "Hexane" },
+      { "key": "cyclohexane", "text": "Cyclohexane" },
+      { "key": "22dimethylbutane", "text": "2,2-Dimethylbutane" },
+      { "key": "none", "text": "None" }
+    ],
+    "hexene": [
+      { "key": "hexane", "text": "Hexane" },
+      { "key": "tran2Hexene", "text": "trans-2-Hexene" },
+      { "key": "2Methyl1Butene", "text": "2-Methyl-1-butene" },
+      { "key": "2Methyl2Butene", "text": "2-Methyl-2-butene" },
+      { "key": "none", "text": "None" }
+    ]
+  }
+}

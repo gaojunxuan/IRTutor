@@ -1,15 +1,32 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "jsx": "react",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "typeRoots": ["node_modules/@types", "node_modules/just-stack-react/node_modules/@types"]
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/just-stack-react/node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
   },
-
-  "include": ["src", "typings/*.d.ts"]
+  "include": [
+    "src",
+    "typings/*.d.ts"
+  ]
 }

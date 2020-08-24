@@ -1,6 +1,5 @@
 import React from 'react';
-import { Stack, Text, Link, FontWeights } from 'office-ui-fabric-react';
-
+import { Stack, Text, Link, FontWeights, DocumentCardImage, DocumentCardTitle, DocumentCardDetails, DocumentCard, StackItem } from 'office-ui-fabric-react';
 import logo from './fabric.png';
 
 const boldStyle = {
@@ -15,35 +14,50 @@ export const App: React.FunctionComponent = () => {
       verticalFill
       styles={{
         root: {
-          width: '960px',
           margin: '0 auto',
           textAlign: 'center',
-          color: '#605e5c'
+          color: '#605e5c',
+          marginLeft: 48,
+          marginRight: 48,
+          minHeight: '100%',
+          height: 'auto',
+          paddingTop: 48,
+          paddingBottom: 48
         }
       }}
       gap={15}
     >
       <img src={logo} alt="logo" />
       <Text variant="xxLarge" styles={boldStyle}>
-        Welcome to Your UI Fabric App
+        IR Tutor
       </Text>
-      <Text variant="large">For a guide on how to customize this project, check out the UI Fabric documentation.</Text>
-      <Text variant="large" styles={boldStyle}>
-        Essential Links
-      </Text>
-      <Stack horizontal gap={15} horizontalAlign="center">
-        <Link href="https://developer.microsoft.com/en-us/fabric">Docs</Link>
-        <Link href="https://stackoverflow.com/questions/tagged/office-ui-fabric">Stack Overflow</Link>
-        <Link href="https://github.com/officeDev/office-ui-fabric-react/">Github</Link>
-        <Link href="https://twitter.com/officeuifabric">Twitter</Link>
-      </Stack>
-      <Text variant="large" styles={boldStyle}>
-        Design System
-      </Text>
-      <Stack horizontal gap={15} horizontalAlign="center">
-        <Link href="https://developer.microsoft.com/en-us/fabric#/styles/icons">Icons</Link>
-        <Link href="https://developer.microsoft.com/en-us/fabric#/styles/typography">Typography</Link>
-        <Link href="https://developer.microsoft.com/en-us/fabric#/styles/themegenerator">Theme</Link>
+      <Text variant="large">Infrared spectroscopy tutorial and reference</Text>
+
+      <Stack wrap horizontal gap={15} horizontalAlign="center" style={{ marginTop: 48 }}>
+        <StackItem>
+          <DocumentCard onClickHref="http://terra-incognita.dev">
+            <DocumentCardImage imageSrc="https://placehold.it/206x100" />
+            <DocumentCardDetails>
+              <DocumentCardTitle title="Introduction" />
+            </DocumentCardDetails>
+          </DocumentCard>
+        </StackItem>
+        <StackItem>
+          <DocumentCard onClickHref="http://terra-incognita.dev">
+            <DocumentCardImage imageSrc="https://placehold.it/206x100" />
+            <DocumentCardDetails>
+              <DocumentCardTitle title="Theory" />
+            </DocumentCardDetails>
+          </DocumentCard>
+        </StackItem>
+        <StackItem>
+          <DocumentCard onClickHref="http://terra-incognita.dev">
+            <DocumentCardImage imageSrc="https://placehold.it/206x100" />
+            <DocumentCardDetails>
+              <DocumentCardTitle title="Interpretation" />
+            </DocumentCardDetails>
+          </DocumentCard>
+        </StackItem>
       </Stack>
     </Stack>
   );
